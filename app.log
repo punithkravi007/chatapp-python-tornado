@@ -1,0 +1,56 @@
+2020-12-01 13:34:48,193 - root - INFO - Chat Application has started on port 8080 with Debug Mode set to True
+2020-12-01 13:34:50,181 - tornado.access - INFO - 304 GET / (::1) 7.81ms
+2020-12-01 13:34:50,298 - tornado.access - WARNING - 404 GET /w.jpg (::1) 3.90ms
+2020-12-01 13:34:52,314 - tornado.access - INFO - 304 GET / (::1) 7.80ms
+2020-12-01 13:34:52,372 - tornado.access - WARNING - 404 GET /w.jpg (::1) 1.95ms
+2020-12-01 13:35:27,295 - tornado.access - INFO - 200 GET / (::1) 6.37ms
+2020-12-01 13:35:27,577 - tornado.access - INFO - 200 GET /static/chatapp.js?v=d0c783264780d8b407a1b777420df2dd1c844d31f8499635cdf94c3b1c941bb6e5b731e4c6545042a3e314ceca256a812e306821ca1591a347a5764d6cb4b1d2 (::1) 226.65ms
+2020-12-01 13:35:27,582 - tornado.access - WARNING - 404 GET /w.jpg (::1) 2.93ms
+2020-12-01 13:35:36,937 - tornado.access - INFO - 101 GET /chat/ws (::1) 0.98ms
+2020-12-01 13:35:41,842 - tornado.access - INFO - 304 GET / (::1) 4.88ms
+2020-12-01 13:35:41,903 - tornado.access - WARNING - 404 GET /w.jpg (::1) 2.93ms
+2020-12-01 13:35:47,349 - tornado.access - INFO - 101 GET /chat/ws (::1) 0.00ms
+2020-12-01 13:38:05,886 - tornado.access - INFO - 304 GET / (::1) 5.86ms
+2020-12-01 13:38:05,955 - tornado.access - WARNING - 404 GET /w.jpg (::1) 1.95ms
+2020-12-01 13:38:19,647 - tornado.access - INFO - 101 GET /chat/ws (::1) 0.98ms
+2020-12-01 13:45:00,404 - tornado.access - INFO - 200 GET / (::1) 10.52ms
+2020-12-01 13:45:00,488 - tornado.access - INFO - 200 GET /static/chatapp.js?v=8632fe6cbff5a0fe0b26e252f04c6ace7a0250b6e954e5f522a51d32a7175855a9b19dd8820afcd9481972ea22e36f97c72133a2ae2b41ae8136cd55b422cc2e (::1) 1.95ms
+2020-12-01 13:45:00,515 - tornado.access - WARNING - 404 GET /w.jpg (::1) 1.95ms
+2020-12-01 13:45:01,875 - tornado.access - INFO - 304 GET / (::1) 8.06ms
+2020-12-01 13:45:01,960 - tornado.access - WARNING - 404 GET /w.jpg (::1) 2.93ms
+2020-12-01 13:45:03,571 - tornado.access - INFO - 304 GET / (::1) 6.83ms
+2020-12-01 13:45:03,634 - tornado.access - WARNING - 404 GET /w.jpg (::1) 2.93ms
+2020-12-01 13:45:14,317 - tornado.access - INFO - 101 GET /chat/ws (::1) 0.96ms
+2020-12-01 13:45:20,343 - tornado.access - INFO - 101 GET /chat/ws (::1) 0.98ms
+2020-12-01 13:46:02,257 - tornado.application - ERROR - Uncaught exception GET /chat/ws (::1)
+HTTPServerRequest(protocol='http', host='localhost:8080', method='GET', uri='/chat/ws', version='HTTP/1.1', remote_ip='::1')
+Traceback (most recent call last):
+  File "C:\Users\Punith.KR\Desktop\Python\chat_app\venv\lib\site-packages\tornado\websocket.py", line 647, in _run_callback
+    result = callback(*args, **kwargs)
+  File "C:\Users\Punith.KR\Desktop\Python\chat_app\chat_app\handlers.py", line 60, in on_message
+    self.send_paired_message(user_id=data["msg_to"], action="message_received", data=source_response)
+  File "C:\Users\Punith.KR\Desktop\Python\chat_app\chat_app\handlers.py", line 81, in send_paired_message
+    pair_handler.write_message(message)
+  File "C:\Users\Punith.KR\Desktop\Python\chat_app\venv\lib\site-packages\tornado\websocket.py", line 337, in write_message
+    raise WebSocketClosedError()
+tornado.websocket.WebSocketClosedError
+2020-12-01 13:46:31,880 - tornado.access - INFO - 304 GET / (::1) 5.89ms
+2020-12-01 13:46:31,982 - tornado.access - WARNING - 404 GET /w.jpg (::1) 3.00ms
+2020-12-01 13:46:37,602 - tornado.access - INFO - 101 GET /chat/ws (::1) 1.01ms
+2020-12-01 13:46:55,674 - tornado.access - INFO - 304 GET / (::1) 6.87ms
+2020-12-01 13:46:55,741 - tornado.access - WARNING - 404 GET /w.jpg (::1) 2.47ms
+2020-12-01 13:46:58,223 - tornado.access - INFO - 304 GET / (::1) 9.38ms
+2020-12-01 13:46:58,293 - tornado.access - WARNING - 404 GET /w.jpg (::1) 1.96ms
+2020-12-01 13:47:03,836 - tornado.access - INFO - 101 GET /chat/ws (::1) 0.98ms
+2020-12-01 13:47:35,217 - tornado.application - ERROR - Uncaught exception GET /chat/ws (::1)
+HTTPServerRequest(protocol='http', host='localhost:8080', method='GET', uri='/chat/ws', version='HTTP/1.1', remote_ip='::1')
+Traceback (most recent call last):
+  File "C:\Users\Punith.KR\Desktop\Python\chat_app\venv\lib\site-packages\tornado\websocket.py", line 647, in _run_callback
+    result = callback(*args, **kwargs)
+  File "C:\Users\Punith.KR\Desktop\Python\chat_app\chat_app\handlers.py", line 60, in on_message
+    self.send_paired_message(user_id=data["msg_to"], action="message_received", data=source_response)
+  File "C:\Users\Punith.KR\Desktop\Python\chat_app\chat_app\handlers.py", line 81, in send_paired_message
+    pair_handler.write_message(message)
+  File "C:\Users\Punith.KR\Desktop\Python\chat_app\venv\lib\site-packages\tornado\websocket.py", line 337, in write_message
+    raise WebSocketClosedError()
+tornado.websocket.WebSocketClosedError
